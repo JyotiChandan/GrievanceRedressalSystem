@@ -1,0 +1,98 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <filter>
+  	<filter-name>AuthFilter</filter-name>
+  	<display-name>AuthFilter</display-name>
+  	<description></description>
+  	<filter-class>com.otz.controller.AuthFilter</filter-class>
+  </filter>
+  <filter-mapping>
+  	<filter-name>AuthFilter</filter-name>
+  	<url-pattern>/AuthFilter</url-pattern>
+  </filter-mapping>
+  
+  
+  
+  <servlet>
+  	<servlet-name>UserDao</servlet-name>
+  	<display-name>UserDao</display-name>
+  	<description></description>
+  	<servlet-class>com.otz.controller.UserDao</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
+  	<servlet-name>UserBean</servlet-name>
+  	<display-name>UserBean</display-name>
+  	<description></description>
+  	<servlet-class>com.otz.bean.UserBean</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Admin</servlet-name>
+  	<display-name>Admin</display-name>
+  	<description></description>
+  	<servlet-class>com.otz.controller.Admin</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>LoginFilter</servlet-name>
+  	<display-name>LoginFilter</display-name>
+  	<description></description>
+  	<servlet-class>com.otz.controller.LoginFilter</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Role</servlet-name>
+  	<display-name>Role</display-name>
+  	<description></description>
+  	<servlet-class>com.otz.controller.Role</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>User</servlet-name>
+  	<display-name>User</display-name>
+  	<description></description>
+  	<servlet-class>com.otz.controller.User</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Engineer</servlet-name>
+  	<display-name>Engineer</display-name>
+  	<description></description>
+  	<servlet-class>com.otz.controller.Engineer</servlet-class>
+  </servlet>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>UserDao</servlet-name>
+  	<url-pattern>/UserDao</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+  	<servlet-name>UserBean</servlet-name>
+  	<url-pattern>/UserBean</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Admin</servlet-name>
+  	<url-pattern>/Admin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>LoginFilter</servlet-name>
+  	<url-pattern>/LoginFilter</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Role</servlet-name>
+  	<url-pattern>/Role</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>User</servlet-name>
+  	<url-pattern>/User</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Engineer</servlet-name>
+  	<url-pattern>/Engineer</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
